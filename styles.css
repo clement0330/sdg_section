@@ -116,22 +116,24 @@ body {
   position: relative;
   overflow: hidden;
   padding-left: 35%;
+  padding-top: 80px;
 }
-
-.slideshow img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Adjust the transition duration as needed */
-  padding-left: 35%;
-  max-width: 500px;
-  max-height:400px;
-}
-
-.slideshow img.active {
-  opacity: 1;
+.slides {
+  width: 300%; /* Set the width to accommodate all slides */
+  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Adjust the transition duration as needed */
   padding-left:35%;
   max-width: 500px;
   max-height:400px;
+  padding-top: 80px;
+}
+
+.slides img {
+  flex: 1 0 100%; /* Distribute the width evenly among the slides */
+  object-fit: cover; /* Adjust the image sizing as needed */
+  padding-left:35%;
+  max-width: 500px;
+  max-height:400px;
+  padding-top: 80px;
 }
