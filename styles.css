@@ -46,7 +46,7 @@ body {
     height: 250px; /* Adjust the height of the slideshow container as needed */
     position: relative;
     overflow: hidden;
-    padding-left: 35%;
+    padding-left: 45%;
     padding-top: 120px;
     z-index: -2;
   }
@@ -57,8 +57,9 @@ body {
     left: 0;
     opacity: 0;
     transition: opacity 0.5s ease-in-out; /* Adjust the transition duration as needed */
-    padding-left: 35%;
+    padding-left: 45%;
     padding-top: 120px;
+    z-index: -2;
   }
   
   .slideshow img.active {
