@@ -111,29 +111,20 @@ body {
     transition: opacity 0.5s; /* Add a smooth transition effect */
   }
 .slideshow {
-  width: 500px; /* Adjust the width of the slideshow container as needed */
-  height: 400px; /* Adjust the height of the slideshow container as needed */
+  width: 100%; /* Set the width to fill the container */
+  height: 300px; /* Adjust the height of the slideshow container as needed */
   position: relative;
   overflow: hidden;
-  padding-left: 45%;
-  padding-top: 200px;
 }
+
 .slides {
   width: 300%; /* Set the width to accommodate all slides */
   height: 100%;
   display: flex;
   transition: transform 0.5s ease-in-out; /* Adjust the transition duration as needed */
-  padding-left:45%;
-  max-width: 500px;
-  max-height:400px;
-  padding-top: 200px;
 }
 
 .slides img {
   flex: 1 0 100%; /* Distribute the width evenly among the slides */
   object-fit: cover; /* Adjust the image sizing as needed */
-  padding-left:45%;
-  max-width: 500px;
-  max-height:400px;
-  padding-top: 200px;
 }
