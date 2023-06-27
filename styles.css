@@ -24,6 +24,7 @@ body {
     border-radius: 50%;
     background-color: #FFFFFF; /* Set the circle color */
     animation: moveCircle linear infinite; /* Adjust the animation properties as needed */
+    z-index: -4
   }
   #circle-container2 {
     position: absolute;
