@@ -35,23 +35,15 @@ function getRandomPosition(max) {
       goalDescription.style.opacity = 1; // Fade in the new description
     }, 500); // Adjust the duration as needed (in milliseconds)
   }
-function changeGoalDescription(newDescription) {
-  const goalDescription = document.getElementById('goal-description');
-  goalDescription.style.opacity = 0; // Fade out the current description
-
-  setTimeout(() => {
-    goalDescription.textContent = newDescription; // Change the text content
-    goalDescription.style.opacity = 1; // Fade in the new description
-  }, 500); // Adjust the duration as needed (in milliseconds)
-}
-document.addEventListener('DOMContentLoaded', function() {
-  var slidesContainer = document.querySelector('.slides');
-  var slideIndex = 0;
-  
-  function showNextSlide() {
-    slideIndex = (slideIndex + 1) % slidesContainer.children.length;
-    slidesContainer.style.transform = 'translateX(' + (slideIndex * -100) + '%)';
-  }
-  
-  setInterval(showNextSlide, 3000); // Adjust the interval duration (in milliseconds) between slide transitions
-});
+  document.addEventListener('DOMContentLoaded', function() {
+    var images = document.querySelectorAll('.slideshow img');
+    var currentImageIndex = 0;
+    
+    function showNextImage() {
+      images[currentImageIndex].classList.remove('active');
+      currentImageIndex = (currentImageIndex + 1) % images.length;
+      images[currentImageIndex].classList.add('active');
+    }
+    
+    setInterval(showNextImage, 3000); // Adjust the interval duration (in milliseconds) between image transitions
+  });
