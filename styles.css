@@ -9,13 +9,12 @@ body {
     padding-top: 80px;
     position: absolute;
     animation: moveUp 5s infinite; /* Adjust the animation properties as needed */
-    padding-left: 20%;
   }
   .subtopic2 {
     padding-top: 80px;
     position: absolute;
     animation: moveDown 5s infinite; /* Adjust the animation properties as needed */
-    padding-left: 75%;
+    padding-left: 15%;
   }
   .circle {
     position: absolute;
@@ -111,4 +110,22 @@ body {
     color: #000000; /* Set the text color */
     transition: opacity 0.5s; /* Add a smooth transition effect */
   }
+.slideshow {
+  width: 500px; /* Adjust the width of the slideshow container as needed */
+  height: 400px; /* Adjust the height of the slideshow container as needed */
+  position: relative;
+  overflow: hidden;
+  padding-left: 25%;
+}
 
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust the transition duration as needed */
+}
+
+.slideshow img.active {
+  opacity: 1;
+}
