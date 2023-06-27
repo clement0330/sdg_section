@@ -124,8 +124,14 @@ body {
   left: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in-out; /* Adjust the transition duration as needed */
+  padding-left: 25%;
+  max-width: 500px;
+  max-height:400px;
 }
 
 .slideshow img.active {
   opacity: 1;
+  padding-left:25%;
+  max-width: 500px;
+  max-height:400px;
 }
