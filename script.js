@@ -35,3 +35,15 @@ function getRandomPosition(max) {
       goalDescription.style.opacity = 1; // Fade in the new description
     }, 500); // Adjust the duration as needed (in milliseconds)
   }
+document.addEventListener('DOMContentLoaded', function() {
+  var images = document.querySelectorAll('.slideshow img');
+  var currentImageIndex = 0;
+  
+  function showNextImage() {
+    images[currentImageIndex].classList.remove('active');
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    images[currentImageIndex].classList.add('active');
+  }
+  
+  setInterval(showNextImage, 3000); // Adjust the interval duration (in milliseconds) between image transitions
+});
